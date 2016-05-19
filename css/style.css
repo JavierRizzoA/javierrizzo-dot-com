@@ -1,0 +1,17 @@
+#canvas {
+  margin-top: 60px;
+}
+
+#footer {
+  background-color: #E3E3E3;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+#footer h3 {
+  margin: 0 0 0 0;
+}
+
+body {
+  overflow: hidden;
+}
