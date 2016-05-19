@@ -1,17 +1,55 @@
-#canvas {
-  margin-top: 60px;
+.social-link {
+  margin: 5px;
 }
 
-#footer {
-  background-color: #E3E3E3;
-  padding-bottom: 15px;
-  padding-top: 15px;
+.jumbotron {
 }
 
-#footer h3 {
-  margin: 0 0 0 0;
+.clickme, .clickme:link, .clickme:visited, .clickme:hover, .clickme:active {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-body {
-  overflow: hidden;
+.clicked, .clicked:link, .clicked:visited, .clicked:hover, .clicked:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.off {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.autoscale {
+    max-width: 100%;
+}
+
+div.description {
+  padding: 5px;
+}
+
+.info ul {
+  list-style-type: none;
+}
+
+
+.spoiler {
+  display: table;
+  position: relative;
+  background-color: #f9fafa;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.spoiler-btn {
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.spoiler-body {
+  padding: 6px;
 }

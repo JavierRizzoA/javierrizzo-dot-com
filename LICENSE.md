@@ -1,18 +1,4 @@
-#javierrizzo-dot-com
-
-My personal website, deployed to http://javierrizzo.com
-
-##Installation
-
-Just clone the repo and do
-
-```bash
-npm install
-```
-
-##License
-
-###The MIT License
+#The MIT License
 
 Copyright (c) 2016 Javier Rizzo
 
