@@ -53,3 +53,9 @@ div.description {
 .spoiler-body {
   padding: 6px;
 }
+
+#ship {
+  width: 170px;
+  height: 110px;
+  position: fixed;
+}
