@@ -2,7 +2,8 @@
   margin: 5px;
 }
 
-.jumbotron {
+.jumbotron ul {
+  font-size: 20px;
 }
 
 .clickme, .clickme:link, .clickme:visited, .clickme:hover, .clickme:active {
