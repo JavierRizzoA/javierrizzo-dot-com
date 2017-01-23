@@ -1,0 +1,14 @@
+.clickme, .clickme:link, .clickme:visited, .clickme:hover, .clickme:active {
+  color:inherit;
+  cursor: pointer;
+  text-decoration:underline;
+}
+
+.clicked, .clicked:link, .clicked:visited, .clicked:hover, .clicked:active {
+  color:inherit;
+  text-decoration:none;
+}
+
+.initially-hidden {
+  display: none;
+}

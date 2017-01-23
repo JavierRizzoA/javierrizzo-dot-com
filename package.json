@@ -1,17 +1,19 @@
 {
-  "name": "javier-rizzo-dot-com",
+  "name": "javierrizzo-dot-com",
   "version": "1.0.0",
   "description": "My personal website",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierRizzoA/javierrizzo-dot-com.git"
+  },
   "author": "Javier Rizzo",
   "license": "MIT",
-  "dependencies": {
-    "bootstrap": "^3.3.6",
-    "cheet.js": "^0.3.3",
-    "font-awesome": "^4.5.0",
-    "jquery": "^2.2.3"
-  }
+  "bugs": {
+    "url": "https://github.com/JavierRizzoA/javierrizzo-dot-com/issues"
+  },
+  "homepage": "https://github.com/JavierRizzoA/javierrizzo-dot-com#readme"
 }
