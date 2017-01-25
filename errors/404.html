@@ -40,18 +40,25 @@
     <link rel="apple-touch-icon" sizes="152x152" href="../icons/apple-touch-icon-152x152.png?v=edef8a8b10" />
   </head>
   <body>
-    <h1>404</h1>
-    <p>The server responded with error #404.</p>
-    <hr />
-    <p>The page <strong><span id="pathname"></span></strong> does not exist. If you got here by an external link please notify the admin of that site that he is linking a broken link. If you got here by a link on javierrizzo.com, please <a href="mailto:javierrizzoa@gmail.com">notify me</a>. If you typed this address on your own, check if you typed it right, or navigate from the <a href="https://javierrizzo.com/">homepage</a>.</p>
+    <div id="error-msg">
+      <h1>404</h1>
+      <p>The server responded with error #404.</p>
+      <hr />
+      <p>The page <strong><span id="pathname"></span></strong> does not exist. If you got here by an external link please notify the admin of that site that he is linking a broken link. If you got here by a link on javierrizzo.com, please <a href="mailto:javierrizzoa@gmail.com">notify me</a>. If you typed this address on your own, check if you typed it right, or navigate from the <a href="https://javierrizzo.com/">homepage</a>.</p>
+    </div>
+    <div id="no-error-msg" style="display:none;">
+      <p>Nah, jk, you just found the location of the actual error page.</p>
+    </div>
     <script>window.$ = document.querySelectorAll.bind(document);</script>
     <script async src="../js/load-font.js"></script>
     <script>
 document.body.onload = function() {
   loadFont('https://fonts.googleapis.com/css?family=Open+Sans');
-  $('#pathname').forEach(function(el) {
-    el.innerHTML = window.location.pathname;
-  });
+  $('#pathname')[0].innerHTML = window.location.pathname;
+  if(window.location.pathname == '/errors/404.html') {
+    $('#error-msg')[0].style.textDecoration = 'line-through';
+    $('#no-error-msg')[0].style.display = 'block';
+  }
 }
     </script>
     <script async>

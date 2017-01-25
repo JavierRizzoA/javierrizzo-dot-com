@@ -40,13 +40,22 @@
     <link rel="apple-touch-icon" sizes="152x152" href="../icons/apple-touch-icon-152x152.png?v=edef8a8b10" />
   </head>
   <body>
-    <h1>50x</h1>
-    <p>Sorry, something went wrong.</p>
+    <div id="error-msg">
+      <h1>50x</h1>
+      <p>Sorry, something went wrong.</p>
+    </div>
+    <div id="no-error-msg" style="display:none;">
+      <p>Nah, jk, you just found the location of the actual error page.</p>
+    </div>
     <script>window.$ = document.querySelectorAll.bind(document);</script>
     <script async src="../js/load-font.js"></script>
     <script>
 document.body.onload = function() {
   loadFont('https://fonts.googleapis.com/css?family=Open+Sans');
+  if(window.location.pathname == '/errors/50x.html') {
+    $('#error-msg')[0].style.textDecoration = 'line-through';
+    $('#no-error-msg')[0].style.display = 'block';
+  }
 }
     </script>
     <script async>
