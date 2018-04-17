@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/JavierRizzoA/javierrizzo-dot-com/issues"
   },
-  "homepage": "https://github.com/JavierRizzoA/javierrizzo-dot-com#readme"
+  "homepage": "https://github.com/JavierRizzoA/javierrizzo-dot-com#readme",
+  "dependencies": {
+    "cheet.js": "^0.3.3",
+    "font-awesome": "^4.7.0"
+  }
 }
