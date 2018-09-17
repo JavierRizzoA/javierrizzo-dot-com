@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="Hi. I'm Javier Rizzo and this is my website." />
+    <meta name="author" content="Javier Rizzo" />
+    <meta name="keywords" content="javier, rizzo, mexicali, programmer, programming, mexico, cybernetics, electronics, writer" />
+    <meta property="og:title" content="Javier Rizzo" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://javierrizzo.com/" />
+    <meta property="og:image" content="http://javierrizzo.com/img/me.jpg" />
+    <meta property="og:description" content="Hi. I'm Javier Rizzo and this is my website." /> 
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@javierrizzoa" />
+    <meta name="twitter:title" content="Javier Rizzo" />
+    <meta name="twitter:description" content="Hi. I'm Javier Rizzo and this is my website." />
+    <meta name="twitter:creator" content="@javierrizzoa" />
+    <meta name="twitter:image" content="http://javierrizzo.com/img/me.jpg" />
+
+    <meta name="theme-color" content="#fc7e0d">
+    <meta name="msapplication-navbutton-color" content="#fc7e0d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fc7e0d">
+
+    <title>Card | Javier Rizzo</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+
+    <link rel="shortcut icon" href="../icons/favicon.ico?v=edef8a8b10" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png?v=edef8a8b10" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../icons/apple-touch-icon-57x57.png?v=edef8a8b10" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../icons/apple-touch-icon-72x72.png?v=edef8a8b10" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../icons/apple-touch-icon-76x76.png?v=edef8a8b10" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../icons/apple-touch-icon-114x114.png?v=edef8a8b10" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-touch-icon-120x120.png?v=edef8a8b10" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../icons/apple-touch-icon-144x144.png?v=edef8a8b10" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../icons/apple-touch-icon-152x152.png?v=edef8a8b10" />
+  </head>
+  <body>
+    <p><a href="../">Javier Rizzo</a> / Card</p>
+    <h1>Card</h1>
+    <p>If you're on this page, you probably received <a href="files/bcard.pdf">my business card</a> and looked at the code behind it.</p>
+    <p>If you were to copy the code, save it as a <code>.html</code> file, and open it with a web browser, you would get the following game:</p>
+    <canvas id="c" width="512" height="256" style="margin-left: auto; margin-right: auto; display: block;"></canvas><script>var c=(
+document.getElementById('c')).getContext('2d'),b,p={x:4, y:112},q={x:
+500,y:112}, P,Q,w=0,s=0,u=0,d=0,t,M=Math; c.r=c.fillRect,W=window; W.
+onkeydown=W.onkeyup=(e)=>{t=e.type=='keydown';e.c=e.key;if(e.c=='l')d
+=t;if(e.c=='o')u=t;if(e.c=='q')w=t;if(e.c=='a')s=t};B=()=>{b={x:252,y
+:124,X:r(2),Y:r(3)-1};if(b.X==0)b.X=-1};C=(v)=>{return M.min(M.max(v,
+0),224)};r=(m)=>{return M.floor(M.random()*m)};setInterval(()=>{p.y+=
+(w)?-4:(s)?4:0;q.y+=(u)?-4:(d)?4:0;p.y=C(p.y);q.y=C(q.y);if(b.x==0||b
+.x==504)B();if(b.y==0||b.y==248)b.Y*=-1;b.x+=b.X*4;b.y+=b.Y*4;P=p.y-b
+.y;Q=q.y-b.y;if(b.x==12&&P<0){if(P>-33)b.X*=-1;b.Y=(P>-12)?-1:(P>-20)
+?0:(P>-32)?1:b.Y};if(b.x==492&&Q<0){if(Q>-33)b.X*=-1;b.Y=(Q>-12)?-1:(
+Q>-20)?0:(Q>-32)?1:b.Y}; c.fillStyle="black"; c.r(0,0,512,256); c.
+fillStyle="white";c.r(254,0,4,256);c.r(b.x,b.y,8,8);c.r(p.x,p.y,8,32)
+c.r(q.x,q.y,8,32)},33);B()</script>
+    <p>(Press <code>Q</code> and <code>A</code> to move the left paddle, and <code>O</code> and <code>L</code> to move the right one).</p>
+    <p>I was inspired to do this by <a href="https://mzucker.github.io/2016/08/03/miniray.html">Matt Zucker's</a> and <a href="http://www.davideaversa.it/2017/07/minimized-cave-generation-cellular-automata/">Davide Aversa's</a> programs that fit on a business card. While mine is not as amazing on a technical level as those of them, I wanted it to be videogame, because I enjoy coding them.</p>
+    <script>window.$ = document.querySelectorAll.bind(document);</script>
+    <script src="../js/load-font.js"></script>
+    <script>
+document.body.onload = function() {
+  loadFont('https://fonts.googleapis.com/css?family=Open+Sans');
+}
+    </script>
+  </body>
+</html>
