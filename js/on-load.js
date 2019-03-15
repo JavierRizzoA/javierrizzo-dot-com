@@ -1,7 +1,8 @@
 document.body.onload = function() {
   loadFont('https://fonts.googleapis.com/css?family=Open+Sans');
   styleClickmes();
+  setUpModal();
   if(window.location.hash == "#projects") {
-    modal.style.display = 'block';
+    document.getElementById('projects-modal').style.display = 'block';
   }
 }
