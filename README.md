@@ -1,8 +1,8 @@
-#javierrizzo-dot-com
+# javierrizzo-dot-com
 
 My personal website, deployed to http://javierrizzo.com
 
-##Installation
+## Installation
 
 Just clone the repo and do
 
@@ -10,11 +10,11 @@ Just clone the repo and do
 npm install
 ```
 
-##License
+## License
 
-###The MIT License
+### The MIT License
 
-Copyright (c) 2016 Javier Rizzo
+Copyright (c) 2016-2019 Javier Rizzo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
