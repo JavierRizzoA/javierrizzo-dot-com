@@ -26,3 +26,5 @@ function styleClickmes() {
     el.classList.remove('initially-hidden');
   });
 }
+
+document.head.innerHTML += '<style>.initially-hidden {display: none;}</style>';

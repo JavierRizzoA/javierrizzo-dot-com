@@ -9,6 +9,6 @@
   text-decoration:none;
 }
 
-.initially-hidden {
-  display: none;
+a:not([href]) {
+  color: inherit;
 }

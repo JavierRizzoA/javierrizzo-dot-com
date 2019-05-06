@@ -5,4 +5,5 @@ document.body.onload = function() {
   if(window.location.hash == "#projects") {
     document.getElementById('projects-modal').style.display = 'block';
   }
+  $('#projects-btn')[0].href = '#projects';
 }
