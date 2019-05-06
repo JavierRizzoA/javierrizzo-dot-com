@@ -43,7 +43,9 @@
     <h1>Card</h1>
     <p>If you're on this page, you probably received <a href="files/bcard.pdf">my business card</a> and looked at the code behind it.</p>
     <p>If you were to copy the code, save it as a <code>.html</code> file, and open it with a web browser, you would get the following game:</p>
-    <canvas id=I width="512" height="256" style="margin-left: auto; margin-right: auto; display: block;"></canvas><script>m=(x,y)=>{return{x:x,y:
+    <canvas id=I width="512" height="256" style="margin-left: auto; margin-right: auto; display: block;"></canvas><script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
+m=(x,y)=>{return{x:x,y:
 y,u:0,d:0}};var c=I.getContext('2d'),b,p=[m(4,112),m(500,112)],t,i,M=
 Math,P,C; c.r=c.fillRect,W=window,g=0,h=0; c.font="60px monospace";W.
 onkeydown=W.onkeyup=(e)=>{t=e.type=='keydown'; e.c=e.key;if(e.c=='l')
@@ -56,14 +58,22 @@ setInterval(()=>{if(b.x==0){h++;B()}; if(b.x==504){g++;B()};if(b.y<=0
 ;i++){P=p[i]; P.y+=(P.u)?-1:(P.d)?1:0; P.y=L(P.y);C=P.y-b.y;if(C<4&&(
 b.x==12&&!i||b.x==492&&i)){if(C>-35)b.X*=-1;b.Y=(C>-4)?-1.5:(C>-11)?-
 1:(C>-21)?0:(C>-28)?1:(C>-35)?1.5:b.Y};c.r(P.x,P.y,8,32)};c.fillText(
-g+" "+h,200,60)},5);B()</script>
+g+" "+h,200,60)},5);B()
+// @license-end
+    </script>
     <p>(Press <code>Q</code> and <code>A</code> to move the left paddle, and <code>O</code> and <code>L</code> to move the right one. You need to have your keyboard on lowercase).</p>
     <p>I was inspired to do this by <a href="https://mzucker.github.io/2016/08/03/miniray.html">Matt Zucker's</a> and <a href="http://www.davideaversa.it/2017/07/minimized-cave-generation-cellular-automata/">Davide Aversa's</a> programs that fit on a business card. While mine is not as amazing on a technical level as those of them, I wanted it to be videogame, because I enjoy coding them.</p>
-    <script>window.$ = document.querySelectorAll.bind(document);</script>
+    <script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
+window.$ = document.querySelectorAll.bind(document);
+// @license-end
+    </script>
     <script src="../js/load-font.js"></script>
     <script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
 document.body.onload = function() {
   loadFont('https://fonts.googleapis.com/css?family=Open+Sans');
+// @license-end
 }
     </script>
   </body>
